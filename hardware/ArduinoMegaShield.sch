@@ -1,0 +1,841 @@
+EESchema Schematic File Version 2
+LIBS:ArduinoMegaShield
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:ArduinoMegaShield-cache
+EELAYER 25 0
+EELAYER END
+$Descr A 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "Arduino Mega Control Shield for Killer Robot Arm"
+Date "2017-07-21"
+Rev "0"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_01X02 P15
+U 1 1 59723BE2
+P 9795 2940
+F 0 "P15" H 9795 3090 50  0000 C CNN
+F 1 "CONN_01X02" V 9895 2940 50  0000 C CNN
+F 2 "" H 9795 2940 50  0000 C CNN
+F 3 "" H 9795 2940 50  0000 C CNN
+	1    9795 2940
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P16
+U 1 1 59723C2C
+P 9795 3555
+F 0 "P16" H 9795 3705 50  0000 C CNN
+F 1 "CONN_01X02" V 9895 3555 50  0000 C CNN
+F 2 "" H 9795 3555 50  0000 C CNN
+F 3 "" H 9795 3555 50  0000 C CNN
+	1    9795 3555
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P11
+U 1 1 59723DCC
+P 9775 1545
+F 0 "P11" H 9775 1695 50  0000 C CNN
+F 1 "CONN_01X02" V 9875 1545 50  0000 C CNN
+F 2 "" H 9775 1545 50  0000 C CNN
+F 3 "" H 9775 1545 50  0000 C CNN
+	1    9775 1545
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P14
+U 1 1 59723E16
+P 9795 2170
+F 0 "P14" H 9795 2320 50  0000 C CNN
+F 1 "CONN_01X02" V 9895 2170 50  0000 C CNN
+F 2 "" H 9795 2170 50  0000 C CNN
+F 3 "" H 9795 2170 50  0000 C CNN
+	1    9795 2170
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P13
+U 1 1 59723EE5
+P 9785 4340
+F 0 "P13" H 9785 4490 50  0000 C CNN
+F 1 "CONN_01X02" V 9885 4340 50  0000 C CNN
+F 2 "" H 9785 4340 50  0000 C CNN
+F 3 "" H 9785 4340 50  0000 C CNN
+	1    9785 4340
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P12
+U 1 1 59723F25
+P 9780 4925
+F 0 "P12" H 9780 5075 50  0000 C CNN
+F 1 "CONN_01X02" V 9880 4925 50  0000 C CNN
+F 2 "" H 9780 4925 50  0000 C CNN
+F 3 "" H 9780 4925 50  0000 C CNN
+	1    9780 4925
+	1    0    0    -1  
+$EndComp
+$Comp
+L ARDUINO_MEGA_SHIELD SHIELD1
+U 1 1 597240DA
+P 2550 3680
+F 0 "SHIELD1" H 2150 6180 60  0000 C CNN
+F 1 "ARDUINO_MEGA_SHIELD" H 2450 980 60  0000 C CNN
+F 2 "" H 2550 3680 60  0001 C CNN
+F 3 "" H 2550 3680 60  0001 C CNN
+	1    2550 3680
+	1    0    0    -1  
+$EndComp
+Text Notes 4765 1665 0    60   ~ 0
+X-Axis
+Text Label 5495 2130 2    60   ~ 0
+~X-Step
+Text Label 5485 2675 2    60   ~ 0
+~X-Dir
+Text Label 9575 1495 2    60   ~ 0
+A1A
+Text Label 9575 1595 2    60   ~ 0
+A1B
+Text Label 9595 2120 2    60   ~ 0
+A2A
+Text Label 9595 2220 2    60   ~ 0
+A2B
+Text Label 9595 2890 2    60   ~ 0
+B1A
+Text Label 9595 2990 2    60   ~ 0
+B1B
+Text Label 9595 3505 2    60   ~ 0
+B2A
+Text Label 9595 3605 2    60   ~ 0
+B2B
+Text Label 9585 4290 2    60   ~ 0
+C1A
+Text Label 9585 4390 2    60   ~ 0
+C1B
+Text Label 9580 4875 2    60   ~ 0
+C2A
+Text Label 9580 4975 2    60   ~ 0
+C2B
+$Comp
+L A4988 U1
+U 1 1 5972596A
+P 8030 1805
+F 0 "U1" H 8020 1175 60  0000 C CNN
+F 1 "A4988" H 8010 2435 60  0000 C CNN
+F 2 "" H 8020 1735 60  0001 C CNN
+F 3 "" H 8020 1735 60  0001 C CNN
+	1    8030 1805
+	1    0    0    -1  
+$EndComp
+$Comp
+L A4988 U2
+U 1 1 597259BF
+P 8080 3260
+F 0 "U2" H 8070 2630 60  0000 C CNN
+F 1 "A4988" H 8060 3890 60  0000 C CNN
+F 2 "" H 8070 3190 60  0001 C CNN
+F 3 "" H 8070 3190 60  0001 C CNN
+	1    8080 3260
+	1    0    0    -1  
+$EndComp
+$Comp
+L A4988 U3
+U 1 1 59725A1E
+P 8095 4685
+F 0 "U3" H 8085 4055 60  0000 C CNN
+F 1 "A4988" H 8075 5315 60  0000 C CNN
+F 2 "" H 8085 4615 60  0001 C CNN
+F 3 "" H 8085 4615 60  0001 C CNN
+	1    8095 4685
+	1    0    0    -1  
+$EndComp
+Text Label 3450 4530 0    60   ~ 0
+~X-Step
+Text Label 3450 4630 0    60   ~ 0
+~Y-Step
+Text Label 3450 4730 0    60   ~ 0
+~Z-Step
+Text Label 3450 5180 0    60   ~ 0
+~X-Dir
+Text Label 3450 5280 0    60   ~ 0
+~Y-Dir
+Text Label 3450 5380 0    60   ~ 0
+~Z-Dir
+Text Label 3450 1530 0    60   ~ 0
+~ENABLE
+Text Notes 4145 1160 0    60   ~ 0
+Connections to the X/Y/Z\nLarge Stepper Controllers\n***Negative Logic - Drive signals low to actuate****
+$Comp
+L CONN_01X02 P9
+U 1 1 59726DF1
+P 5695 1565
+F 0 "P9" H 5695 1715 50  0000 C CNN
+F 1 "CONN_01X02" V 5795 1565 50  0000 C CNN
+F 2 "" H 5695 1565 50  0000 C CNN
+F 3 "" H 5695 1565 50  0000 C CNN
+	1    5695 1565
+	1    0    0    -1  
+$EndComp
+Text Label 5495 1615 2    60   ~ 0
+~ENABLE
+$Comp
+L CONN_01X02 P10
+U 1 1 59726F4A
+P 5695 2080
+F 0 "P10" H 5695 2230 50  0000 C CNN
+F 1 "CONN_01X02" V 5795 2080 50  0000 C CNN
+F 2 "" H 5695 2080 50  0000 C CNN
+F 3 "" H 5695 2080 50  0000 C CNN
+	1    5695 2080
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P8
+U 1 1 5972702B
+P 5685 2625
+F 0 "P8" H 5685 2775 50  0000 C CNN
+F 1 "CONN_01X02" V 5785 2625 50  0000 C CNN
+F 2 "" H 5685 2625 50  0000 C CNN
+F 3 "" H 5685 2625 50  0000 C CNN
+	1    5685 2625
+	1    0    0    -1  
+$EndComp
+Text Notes 4750 3310 0    60   ~ 0
+Y-Axis
+Text Label 5480 3775 2    60   ~ 0
+~Y-Step
+Text Label 5470 4320 2    60   ~ 0
+~Y-Dir
+$Comp
+L CONN_01X02 P6
+U 1 1 597275F9
+P 5680 3210
+F 0 "P6" H 5680 3360 50  0000 C CNN
+F 1 "CONN_01X02" V 5780 3210 50  0000 C CNN
+F 2 "" H 5680 3210 50  0000 C CNN
+F 3 "" H 5680 3210 50  0000 C CNN
+	1    5680 3210
+	1    0    0    -1  
+$EndComp
+Text Label 5480 3260 2    60   ~ 0
+~ENABLE
+$Comp
+L CONN_01X02 P7
+U 1 1 59727600
+P 5680 3725
+F 0 "P7" H 5680 3875 50  0000 C CNN
+F 1 "CONN_01X02" V 5780 3725 50  0000 C CNN
+F 2 "" H 5680 3725 50  0000 C CNN
+F 3 "" H 5680 3725 50  0000 C CNN
+	1    5680 3725
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P3
+U 1 1 59727606
+P 5670 4270
+F 0 "P3" H 5670 4420 50  0000 C CNN
+F 1 "CONN_01X02" V 5770 4270 50  0000 C CNN
+F 2 "" H 5670 4270 50  0000 C CNN
+F 3 "" H 5670 4270 50  0000 C CNN
+	1    5670 4270
+	1    0    0    -1  
+$EndComp
+Text Notes 4740 5070 0    60   ~ 0
+Z-Axis
+Text Label 5470 5535 2    60   ~ 0
+~Z-Step
+Text Label 5460 6080 2    60   ~ 0
+~Z-Dir
+$Comp
+L CONN_01X02 P4
+U 1 1 597277FC
+P 5670 4970
+F 0 "P4" H 5670 5120 50  0000 C CNN
+F 1 "CONN_01X02" V 5770 4970 50  0000 C CNN
+F 2 "" H 5670 4970 50  0000 C CNN
+F 3 "" H 5670 4970 50  0000 C CNN
+	1    5670 4970
+	1    0    0    -1  
+$EndComp
+Text Label 5470 5020 2    60   ~ 0
+~ENABLE
+$Comp
+L CONN_01X02 P5
+U 1 1 59727803
+P 5670 5485
+F 0 "P5" H 5670 5635 50  0000 C CNN
+F 1 "CONN_01X02" V 5770 5485 50  0000 C CNN
+F 2 "" H 5670 5485 50  0000 C CNN
+F 3 "" H 5670 5485 50  0000 C CNN
+	1    5670 5485
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P2
+U 1 1 59727809
+P 5660 6030
+F 0 "P2" H 5660 6180 50  0000 C CNN
+F 1 "CONN_01X02" V 5760 6030 50  0000 C CNN
+F 2 "" H 5660 6030 50  0000 C CNN
+F 3 "" H 5660 6030 50  0000 C CNN
+	1    5660 6030
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	4480 4640 6045 4640
+Wire Notes Line
+	6045 4640 6045 6435
+Wire Notes Line
+	6045 6435 4480 6435
+Wire Notes Line
+	4480 6435 4480 4640
+Wire Notes Line
+	6040 2920 6040 4570
+Wire Notes Line
+	6040 4570 4505 4570
+Wire Notes Line
+	4505 4570 4505 2915
+Wire Notes Line
+	4505 2880 6030 2880
+Wire Notes Line
+	6030 2880 6030 1345
+Wire Notes Line
+	6030 1345 4505 1345
+Wire Notes Line
+	4505 1345 4505 2885
+Wire Notes Line
+	4505 2915 6040 2915
+Wire Notes Line
+	6040 2915 6040 2910
+Wire Notes Line
+	9190 1250 9190 2525
+Wire Notes Line
+	9190 2525 10195 2525
+Wire Notes Line
+	10195 2525 10195 1250
+Wire Notes Line
+	10195 1250 9185 1250
+Wire Notes Line
+	9185 3865 10195 3865
+Wire Notes Line
+	10195 3865 10195 2670
+Wire Notes Line
+	10195 2670 9185 2670
+Wire Notes Line
+	9200 4055 9200 5265
+Wire Notes Line
+	9200 5265 10210 5265
+Wire Notes Line
+	10210 5265 10210 4050
+Wire Notes Line
+	10210 4050 9195 4050
+Text Notes 9275 4160 0    60   ~ 0
+C-Axis
+Text Notes 9240 2780 0    60   ~ 0
+B-Axis
+Text Notes 9260 1370 0    60   ~ 0
+A-Axis
+Text Label 8600 1815 0    60   ~ 0
+A1A
+Text Label 8600 1945 0    60   ~ 0
+A1B
+Text Label 8600 1705 0    60   ~ 0
+A2A
+Text Label 8600 1595 0    60   ~ 0
+A2B
+Text Label 8650 3270 0    60   ~ 0
+B1A
+Text Label 8650 3400 0    60   ~ 0
+B1B
+Text Label 8650 3160 0    60   ~ 0
+B2A
+Text Label 8650 3050 0    60   ~ 0
+B2B
+Text Label 8665 4695 0    60   ~ 0
+C1A
+Text Label 8665 4825 0    60   ~ 0
+C1B
+Text Label 8665 4585 0    60   ~ 0
+C2A
+Text Label 8665 4475 0    60   ~ 0
+C2B
+$Comp
+L +5V #PWR1
+U 1 1 5972A810
+P 1150 1930
+F 0 "#PWR1" H 1150 1780 50  0001 C CNN
+F 1 "+5V" H 1150 2070 50  0000 C CNN
+F 2 "" H 1150 1930 50  0000 C CNN
+F 3 "" H 1150 1930 50  0000 C CNN
+	1    1150 1930
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 1930 1150 1930
+$Comp
+L +5V #PWR12
+U 1 1 5972A8CD
+P 5495 1515
+F 0 "#PWR12" H 5495 1365 50  0001 C CNN
+F 1 "+5V" H 5495 1655 50  0000 C CNN
+F 2 "" H 5495 1515 50  0000 C CNN
+F 3 "" H 5495 1515 50  0000 C CNN
+F 4 "Value" H 5495 1515 60  0001 C CNN "Fieldname"
+	1    5495 1515
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR13
+U 1 1 5972AA4A
+P 5495 2030
+F 0 "#PWR13" H 5495 1880 50  0001 C CNN
+F 1 "+5V" H 5495 2170 50  0000 C CNN
+F 2 "" H 5495 2030 50  0000 C CNN
+F 3 "" H 5495 2030 50  0000 C CNN
+	1    5495 2030
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR11
+U 1 1 5972AC16
+P 5485 2575
+F 0 "#PWR11" H 5485 2425 50  0001 C CNN
+F 1 "+5V" H 5485 2715 50  0000 C CNN
+F 2 "" H 5485 2575 50  0000 C CNN
+F 3 "" H 5485 2575 50  0000 C CNN
+	1    5485 2575
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR9
+U 1 1 5972ADFC
+P 5480 3160
+F 0 "#PWR9" H 5480 3010 50  0001 C CNN
+F 1 "+5V" H 5480 3300 50  0000 C CNN
+F 2 "" H 5480 3160 50  0000 C CNN
+F 3 "" H 5480 3160 50  0000 C CNN
+	1    5480 3160
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR10
+U 1 1 5972B138
+P 5480 3675
+F 0 "#PWR10" H 5480 3525 50  0001 C CNN
+F 1 "+5V" H 5480 3815 50  0000 C CNN
+F 2 "" H 5480 3675 50  0000 C CNN
+F 3 "" H 5480 3675 50  0000 C CNN
+	1    5480 3675
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR6
+U 1 1 5972B260
+P 5470 4220
+F 0 "#PWR6" H 5470 4070 50  0001 C CNN
+F 1 "+5V" H 5470 4360 50  0000 C CNN
+F 2 "" H 5470 4220 50  0000 C CNN
+F 3 "" H 5470 4220 50  0000 C CNN
+	1    5470 4220
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR7
+U 1 1 5972B34F
+P 5470 4920
+F 0 "#PWR7" H 5470 4770 50  0001 C CNN
+F 1 "+5V" H 5470 5060 50  0000 C CNN
+F 2 "" H 5470 4920 50  0000 C CNN
+F 3 "" H 5470 4920 50  0000 C CNN
+	1    5470 4920
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR8
+U 1 1 5972B477
+P 5470 5435
+F 0 "#PWR8" H 5470 5285 50  0001 C CNN
+F 1 "+5V" H 5470 5575 50  0000 C CNN
+F 2 "" H 5470 5435 50  0000 C CNN
+F 3 "" H 5470 5435 50  0000 C CNN
+	1    5470 5435
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR5
+U 1 1 5972B553
+P 5460 5980
+F 0 "#PWR5" H 5460 5830 50  0001 C CNN
+F 1 "+5V" H 5460 6120 50  0000 C CNN
+F 2 "" H 5460 5980 50  0000 C CNN
+F 3 "" H 5460 5980 50  0000 C CNN
+	1    5460 5980
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR14
+U 1 1 5972CFE6
+P 8600 2225
+F 0 "#PWR14" H 8600 1975 50  0001 C CNN
+F 1 "GND" H 8600 2075 50  0000 C CNN
+F 2 "" H 8600 2225 50  0000 C CNN
+F 3 "" H 8600 2225 50  0000 C CNN
+	1    8600 2225
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR15
+U 1 1 5972D06A
+P 8650 3680
+F 0 "#PWR15" H 8650 3430 50  0001 C CNN
+F 1 "GND" H 8650 3530 50  0000 C CNN
+F 2 "" H 8650 3680 50  0000 C CNN
+F 3 "" H 8650 3680 50  0000 C CNN
+	1    8650 3680
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR16
+U 1 1 5972D159
+P 8665 5105
+F 0 "#PWR16" H 8665 4855 50  0001 C CNN
+F 1 "GND" H 8665 4955 50  0000 C CNN
+F 2 "" H 8665 5105 50  0000 C CNN
+F 3 "" H 8665 5105 50  0000 C CNN
+	1    8665 5105
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR21
+U 1 1 5972D7C1
+P 8865 1485
+F 0 "#PWR21" H 8865 1235 50  0001 C CNN
+F 1 "GND" H 8865 1335 50  0000 C CNN
+F 2 "" H 8865 1485 50  0000 C CNN
+F 3 "" H 8865 1485 50  0000 C CNN
+	1    8865 1485
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 1485 8865 1485
+$Comp
+L +12V #PWR20
+U 1 1 5972E28C
+P 8865 1285
+F 0 "#PWR20" H 8865 1135 50  0001 C CNN
+F 1 "+12V" H 8865 1425 50  0000 C CNN
+F 2 "" H 8865 1285 50  0000 C CNN
+F 3 "" H 8865 1285 50  0000 C CNN
+	1    8865 1285
+	1    0    0    -1  
+$EndComp
+Text Label 7440 1375 2    60   ~ 0
+~ENABLE
+Text Label 7490 2830 2    60   ~ 0
+~ENABLE
+Text Label 7505 4255 2    60   ~ 0
+~ENABLE
+$Comp
+L +5V #PWR17
+U 1 1 5972EC88
+P 8775 2125
+F 0 "#PWR17" H 8775 1975 50  0001 C CNN
+F 1 "+5V" H 8775 2265 50  0000 C CNN
+F 2 "" H 8775 2125 50  0000 C CNN
+F 3 "" H 8775 2125 50  0000 C CNN
+F 4 "Value" H 8775 2125 60  0001 C CNN "Fieldname"
+	1    8775 2125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 2085 8705 2085
+Wire Wire Line
+	8705 2085 8705 2125
+Wire Wire Line
+	8705 2125 8775 2125
+$Comp
+L +5V #PWR18
+U 1 1 5972EE44
+P 8825 3580
+F 0 "#PWR18" H 8825 3430 50  0001 C CNN
+F 1 "+5V" H 8825 3720 50  0000 C CNN
+F 2 "" H 8825 3580 50  0000 C CNN
+F 3 "" H 8825 3580 50  0000 C CNN
+F 4 "Value" H 8825 3580 60  0001 C CNN "Fieldname"
+	1    8825 3580
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 3540 8755 3540
+Wire Wire Line
+	8755 3540 8755 3580
+Wire Wire Line
+	8755 3580 8825 3580
+$Comp
+L +5V #PWR19
+U 1 1 5972EF47
+P 8840 5005
+F 0 "#PWR19" H 8840 4855 50  0001 C CNN
+F 1 "+5V" H 8840 5145 50  0000 C CNN
+F 2 "" H 8840 5005 50  0000 C CNN
+F 3 "" H 8840 5005 50  0000 C CNN
+F 4 "Value" H 8840 5005 60  0001 C CNN "Fieldname"
+	1    8840 5005
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8665 4965 8770 4965
+Wire Wire Line
+	8770 4965 8770 5005
+Wire Wire Line
+	8770 5005 8840 5005
+$Comp
+L GND #PWR2
+U 1 1 5972F477
+P 1155 2030
+F 0 "#PWR2" H 1155 1780 50  0001 C CNN
+F 1 "GND" H 1155 1880 50  0000 C CNN
+F 2 "" H 1155 2030 50  0000 C CNN
+F 3 "" H 1155 2030 50  0000 C CNN
+	1    1155 2030
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 2030 1155 2030
+$Comp
+L CP1_Small C1
+U 1 1 5972F7A6
+P 8865 1385
+F 0 "C1" H 8875 1455 50  0000 L CNN
+F 1 "100u" H 8875 1305 50  0000 L CNN
+F 2 "" H 8865 1385 50  0000 C CNN
+F 3 "" H 8865 1385 50  0000 C CNN
+F 4 "Value" H 8865 1385 60  0001 C CNN "Fieldname"
+	1    8865 1385
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 1375 8600 1285
+Wire Wire Line
+	8600 1285 8865 1285
+$Comp
+L GND #PWR23
+U 1 1 5972FC89
+P 8915 2940
+F 0 "#PWR23" H 8915 2690 50  0001 C CNN
+F 1 "GND" H 8915 2790 50  0000 C CNN
+F 2 "" H 8915 2940 50  0000 C CNN
+F 3 "" H 8915 2940 50  0000 C CNN
+	1    8915 2940
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 2940 8915 2940
+$Comp
+L +12V #PWR22
+U 1 1 5972FC90
+P 8915 2740
+F 0 "#PWR22" H 8915 2590 50  0001 C CNN
+F 1 "+12V" H 8915 2880 50  0000 C CNN
+F 2 "" H 8915 2740 50  0000 C CNN
+F 3 "" H 8915 2740 50  0000 C CNN
+	1    8915 2740
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1_Small C2
+U 1 1 5972FC97
+P 8915 2840
+F 0 "C2" H 8925 2910 50  0000 L CNN
+F 1 "100u" H 8925 2760 50  0000 L CNN
+F 2 "" H 8915 2840 50  0000 C CNN
+F 3 "" H 8915 2840 50  0000 C CNN
+F 4 "Value" H 8915 2840 60  0001 C CNN "Fieldname"
+	1    8915 2840
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 2740 8915 2740
+Wire Wire Line
+	8650 2740 8650 2830
+Wire Notes Line
+	9185 2670 9185 3865
+$Comp
+L GND #PWR25
+U 1 1 59730473
+P 8930 4365
+F 0 "#PWR25" H 8930 4115 50  0001 C CNN
+F 1 "GND" H 8930 4215 50  0000 C CNN
+F 2 "" H 8930 4365 50  0000 C CNN
+F 3 "" H 8930 4365 50  0000 C CNN
+	1    8930 4365
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8665 4365 8930 4365
+$Comp
+L +12V #PWR24
+U 1 1 5973047A
+P 8930 4165
+F 0 "#PWR24" H 8930 4015 50  0001 C CNN
+F 1 "+12V" H 8930 4305 50  0000 C CNN
+F 2 "" H 8930 4165 50  0000 C CNN
+F 3 "" H 8930 4165 50  0000 C CNN
+	1    8930 4165
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1_Small C3
+U 1 1 59730481
+P 8930 4265
+F 0 "C3" H 8940 4335 50  0000 L CNN
+F 1 "100u" H 8940 4185 50  0000 L CNN
+F 2 "" H 8930 4265 50  0000 C CNN
+F 3 "" H 8930 4265 50  0000 C CNN
+F 4 "Value" H 8930 4265 60  0001 C CNN "Fieldname"
+	1    8930 4265
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8665 4165 8930 4165
+Wire Wire Line
+	8665 4165 8665 4255
+Text Label 3450 5480 0    60   ~ 0
+A-Dir
+Text Label 3450 5580 0    60   ~ 0
+B-Dir
+Text Label 3450 5680 0    60   ~ 0
+C-Dir
+Text Label 7440 2225 2    60   ~ 0
+A-Dir
+Text Label 7490 3680 2    60   ~ 0
+B-Dir
+Text Label 7505 5105 2    60   ~ 0
+C-Dir
+Text Label 3450 4830 0    60   ~ 0
+A-Step
+Text Label 3450 4930 0    60   ~ 0
+B-Step
+Text Label 3450 5030 0    60   ~ 0
+C-Step
+Text Label 7440 2085 2    60   ~ 0
+A-Step
+Text Label 7490 3540 2    60   ~ 0
+B-Step
+Text Label 7505 4965 2    60   ~ 0
+C-Step
+NoConn ~ 7505 4825
+NoConn ~ 7505 4695
+NoConn ~ 7505 4585
+NoConn ~ 7505 4475
+NoConn ~ 7505 4365
+NoConn ~ 7490 2940
+NoConn ~ 7490 3050
+NoConn ~ 7490 3160
+NoConn ~ 7490 3270
+NoConn ~ 7490 3400
+NoConn ~ 7440 1485
+NoConn ~ 7440 1595
+NoConn ~ 7440 1705
+NoConn ~ 7440 1815
+NoConn ~ 7440 1945
+$Comp
+L CONN_01X02 P1
+U 1 1 59732899
+P 2500 7095
+F 0 "P1" H 2500 7245 50  0000 C CNN
+F 1 "CONN_01X02" V 2600 7095 50  0000 C CNN
+F 2 "" H 2500 7095 50  0000 C CNN
+F 3 "" H 2500 7095 50  0000 C CNN
+	1    2500 7095
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR4
+U 1 1 59732A1E
+P 2300 7145
+F 0 "#PWR4" H 2300 6895 50  0001 C CNN
+F 1 "GND" H 2300 6995 50  0000 C CNN
+F 2 "" H 2300 7145 50  0000 C CNN
+F 3 "" H 2300 7145 50  0000 C CNN
+	1    2300 7145
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR3
+U 1 1 59732CCE
+P 2300 7045
+F 0 "#PWR3" H 2300 6895 50  0001 C CNN
+F 1 "+12V" H 2300 7185 50  0000 C CNN
+F 2 "" H 2300 7045 50  0000 C CNN
+F 3 "" H 2300 7045 50  0000 C CNN
+	1    2300 7045
+	1    0    0    -1  
+$EndComp
+Text Notes 715  565  0    60   ~ 12
+To Do:
+Text Notes 710  1040 0    60   ~ 0
+1) LED power indicators for 5V and 12V\n2) separate logic and motor grounds?\n3) more limit switches?\n4) barrel connector or screw terminal for +12V input\n5) E-stop??
+Text Notes 1745 6795 0    60   ~ 0
+Motor Power Conection
+Wire Notes Line
+	1525 6650 1525 7495
+Wire Notes Line
+	1525 7495 2955 7495
+Wire Notes Line
+	2955 7495 2955 6650
+Wire Notes Line
+	2955 6650 1525 6650
+Text Label 3450 1830 0    60   ~ 0
+X_LIMIT
+Text Label 3450 1730 0    60   ~ 0
+Y_LIMIT
+Text Label 3450 1630 0    60   ~ 0
+Z_LIMIT
+Text Label 1550 4530 2    60   ~ 0
+A_LIMIT
+Text Label 1550 4630 2    60   ~ 0
+B_LIMIT
+Text Label 1550 4730 2    60   ~ 0
+C_LIMIT
+Text Notes 7300 1025 0    60   ~ 0
+Note: Leaving MS1, MS2, and MS3 disconnected will result\nin the A4988 being placed in Full Step Mode.
+Text Notes 3135 7160 0    60   ~ 0
+Barrel Connector or Screw Terminal????
+$EndSCHEMATC
