@@ -637,8 +637,8 @@ F 3 "" H 1495 7085 50  0000 C CNN
 $EndComp
 Text Notes 715  565  0    60   ~ 12
 To Do:
-Text Notes 710  1040 0    60   ~ 0
-1) separate logic and motor grounds?\n2) more limit switches?\n3) E-stop??\n4) Verify motor voltage is +12V (sizing of LED resistor)
+Text Notes 720  1065 0    60   ~ 0
+1) separate logic and motor grounds?\n2) more limit switches?\n3) E-stop??\n4) Verify motor voltage is +12V (sizing of LED resistor)\n5) Reset button on RST pin?
 Text Notes 940  6835 0    60   ~ 0
 Motor Power Conection
 Text Label 3450 1830 0    60   ~ 0
@@ -1357,4 +1357,6 @@ Wire Notes Line
 	9935 5435 7400 5435
 Wire Notes Line
 	7400 5435 7400 5480
+Text Notes 4705 6670 0    60   ~ 0
+Note: Limit switches must be on a single bank, Bank B.\nThat includes digital pins 50-53 and 10-13.
 $EndSCHEMATC
