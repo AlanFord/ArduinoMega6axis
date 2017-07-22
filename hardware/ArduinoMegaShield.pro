@@ -1,4 +1,4 @@
-update=Friday, July 21, 2017 'PMt' 07:47:44 PM
+update=Saturday, July 22, 2017 'PMt' 12:12:37 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -62,7 +62,7 @@ LibName30=valves
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=
+PlotDirectoryName=../
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=

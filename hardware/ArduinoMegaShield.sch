@@ -185,21 +185,21 @@ F 3 "" H 8085 4615 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 3450 4530 0    60   ~ 0
-~X-Step
+X-Step
 Text Label 3450 4630 0    60   ~ 0
-~Y-Step
+Y-Step
 Text Label 3450 4730 0    60   ~ 0
-~Z-Step
+Z-Step
 Text Label 3450 5180 0    60   ~ 0
-~X-Dir
+X-Dir
 Text Label 3450 5280 0    60   ~ 0
-~Y-Dir
+Y-Dir
 Text Label 3450 5380 0    60   ~ 0
-~Z-Dir
+Z-Dir
 Text Label 3450 1530 0    60   ~ 0
 ~ENABLE
-Text Notes 4145 1160 0    60   ~ 0
-Connections to the X/Y/Z\nLarge Stepper Controllers\n***Negative Logic - Drive signals low to actuate****
+Text Notes 4610 1210 0    60   ~ 0
+Connections to the X/Y/Z\nLarge Stepper Controllers
 $Comp
 L CONN_01X02 P9
 U 1 1 59726DF1
@@ -634,7 +634,7 @@ $EndComp
 Text Notes 715  565  0    60   ~ 12
 To Do:
 Text Notes 710  1040 0    60   ~ 0
-1) LED power indicators for 5V and 12V\n2) separate logic and motor grounds?\n3) more limit switches?\n4) E-stop??
+1) separate logic and motor grounds?\n2) more limit switches?\n3) E-stop??\n4) Verify motor voltage is +12V (sizing of LED resistor)
 Text Notes 940  6835 0    60   ~ 0
 Motor Power Conection
 Text Label 3450 1830 0    60   ~ 0
