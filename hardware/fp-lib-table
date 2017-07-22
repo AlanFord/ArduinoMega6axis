@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name arduino-shields)(type KiCad)(uri "$(KIPRJMOD)/arduino-shields.pretty")(options "")(descr ""))
+  (lib (name 6axis)(type KiCad)(uri "$(KIPRJMOD)/6axis.pretty")(options "")(descr ""))
+)
