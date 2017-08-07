@@ -654,7 +654,7 @@ B_LIMIT
 Text Label 1550 4730 2    60   ~ 0
 C_LIMIT
 Text Notes 7255 720  0    60   ~ 0
-Note: Populate MS1, MS2, and MS3 NOPOP resistors as required\nachieve the desired microstepping.
+Note: Populate MS1, MS2, and MS3 NOPOP resistors as required\nachieve the desired microstepping.  Sense resistors are 0.1R.
 $Comp
 L GND #PWR21
 U 1 1 59736443
@@ -1683,7 +1683,7 @@ L R_Small R4
 U 1 1 5980EA88
 P 4665 7425
 F 0 "R4" H 4470 7480 50  0000 L CNN
-F 1 "10K" V 4735 7345 50  0000 L CNN
+F 1 "4.7K" V 4735 7345 50  0000 L CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" H 4665 7425 50  0001 C CNN
 F 3 "" H 4665 7425 50  0000 C CNN
 F 4 "Value" H 4665 7425 60  0001 C CNN "Fieldname"
@@ -1811,4 +1811,6 @@ Wire Notes Line
 	4795 580  3445 580 
 Text Label 1550 3530 2    60   ~ 0
 CYCLE_START
+Text Notes 5545 790  0    60   ~ 0
+Consider Copal S-1011A\nrotary dip switch for MS1-MS3
 $EndSCHEMATC
