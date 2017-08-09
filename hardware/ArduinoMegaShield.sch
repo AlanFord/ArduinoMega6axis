@@ -596,12 +596,6 @@ Text Label 7445 3235 2    60   ~ 0
 B-Step
 Text Label 7460 4660 2    60   ~ 0
 C-Step
-NoConn ~ 7460 4520
-NoConn ~ 7460 4390
-NoConn ~ 7445 2965
-NoConn ~ 7445 3095
-NoConn ~ 7395 1510
-NoConn ~ 7395 1640
 $Comp
 L CONN_01X02 P1
 U 1 1 59732899
@@ -1813,4 +1807,22 @@ Text Label 1550 3530 2    60   ~ 0
 CYCLE_START
 Text Notes 5545 790  0    60   ~ 0
 Consider Copal S-1011A\nrotary dip switch for MS1-MS3
+Wire Wire Line
+	7395 1510 7125 1510
+Wire Wire Line
+	7125 1510 7125 1640
+Wire Wire Line
+	7125 1640 7395 1640
+Wire Wire Line
+	7445 2965 7175 2965
+Wire Wire Line
+	7175 2965 7175 3095
+Wire Wire Line
+	7175 3095 7445 3095
+Wire Wire Line
+	7460 4390 7190 4390
+Wire Wire Line
+	7190 4390 7190 4520
+Wire Wire Line
+	7190 4520 7460 4520
 $EndSCHEMATC
