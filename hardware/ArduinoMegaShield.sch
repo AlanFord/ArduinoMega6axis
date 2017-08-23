@@ -290,12 +290,6 @@ Text Label 5825 4915 2    60   ~ 0
 B-Step
 Text Label 5840 6340 2    60   ~ 0
 C-Step
-Text Notes 490  -295 0    60   ~ 12
-To Do:
-Text Notes 495  205  0    60   ~ 0
-1) separate logic and motor grounds?\n2) more limit switches?\n3) E-stop??\n4) Verify motor voltage is +12V (sizing of LED resistor)\n5) Reset button on RST pin?
-Text Notes 7360 90   0    60   ~ 0
-Note: Populate MS1, MS2, and MS3 NOPOP resistors as required\nachieve the desired microstepping.  Sense resistors are 0.1R.
 $Comp
 L +5V #PWR013
 U 1 1 5973825C
@@ -308,8 +302,6 @@ F 4 "Value" H 5580 2660 60  0001 C CNN "Fieldname"
 	1    5580 2660
 	1    0    0    -1  
 $EndComp
-Text Notes 5520 15   0    60   ~ 0
-Consider Copal S-1011A\nrotary dip switch for MS1-MS3
 $Comp
 L ARDUINO_MEGA_SHIELD SHIELD101
 U 1 1 598E42A6
