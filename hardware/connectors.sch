@@ -1,0 +1,653 @@
+EESchema Schematic File Version 2
+LIBS:ArduinoMegaShield
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:switches
+LIBS:ArduinoMegaShield-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_01X02 P204
+U 1 1 599D6B11
+P 6595 3025
+F 0 "P204" H 6595 3175 50  0000 C CNN
+F 1 "CONN_01X02" V 6695 3025 50  0000 C CNN
+F 2 "6axis:Terminal_Block_200_mil" H 6595 3025 50  0001 C CNN
+F 3 "" H 6595 3025 50  0000 C CNN
+	1    6595 3025
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR026
+U 1 1 599D6B18
+P 6395 3220
+F 0 "#PWR026" H 6395 2970 50  0001 C CNN
+F 1 "GND" H 6395 3070 50  0000 C CNN
+F 2 "" H 6395 3220 50  0000 C CNN
+F 3 "" H 6395 3220 50  0000 C CNN
+	1    6395 3220
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R202
+U 1 1 599D6B1F
+P 6220 2875
+F 0 "R202" H 6025 2930 50  0000 L CNN
+F 1 "4.7K" V 6290 2795 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 6220 2875 50  0001 C CNN
+F 3 "" H 6220 2875 50  0000 C CNN
+F 4 "Value" H 6220 2875 60  0001 C CNN "Fieldname"
+	1    6220 2875
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR027
+U 1 1 599D6B27
+P 6220 2740
+F 0 "#PWR027" H 6220 2590 50  0001 C CNN
+F 1 "+5V" H 6220 2880 50  0000 C CNN
+F 2 "" H 6220 2740 50  0000 C CNN
+F 3 "" H 6220 2740 50  0000 C CNN
+F 4 "Value" H 6220 2740 60  0001 C CNN "Fieldname"
+	1    6220 2740
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6220 2775 6220 2740
+Wire Wire Line
+	6150 2975 6395 2975
+Connection ~ 6220 2975
+$Comp
+L C_Small C202
+U 1 1 599D6B31
+P 6315 3100
+F 0 "C202" H 6325 3170 50  0000 L CNN
+F 1 "0.1u" H 6065 3110 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6315 3100 50  0001 C CNN
+F 3 "" H 6315 3100 50  0000 C CNN
+F 4 "Value" H 6315 3100 60  0001 C CNN "Fieldname"
+	1    6315 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6315 2975 6315 3000
+Wire Wire Line
+	6395 3075 6395 3220
+Wire Wire Line
+	6315 3200 6395 3200
+Connection ~ 6395 3200
+Connection ~ 6315 2975
+Wire Notes Line
+	5490 2540 5490 3120
+Wire Notes Line
+	5490 3120 6025 3120
+Wire Notes Line
+	6025 3120 6025 3480
+Wire Notes Line
+	6055 3445 6870 3445
+Wire Notes Line
+	6840 3480 6840 2540
+Wire Notes Line
+	6840 2540 5490 2540
+$Comp
+L CONN_01X02 P201
+U 1 1 599D7133
+P 2690 5830
+F 0 "P201" H 2690 5980 50  0000 C CNN
+F 1 "CONN_01X02" V 2790 5830 50  0000 C CNN
+F 2 "6axis:Terminal_Block_200_mil" H 2690 5830 50  0001 C CNN
+F 3 "" H 2690 5830 50  0000 C CNN
+	1    2690 5830
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR028
+U 1 1 599D713A
+P 2490 5880
+F 0 "#PWR028" H 2490 5630 50  0001 C CNN
+F 1 "GND" H 2490 5730 50  0000 C CNN
+F 2 "" H 2490 5880 50  0000 C CNN
+F 3 "" H 2490 5880 50  0000 C CNN
+	1    2490 5880
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR029
+U 1 1 599D7140
+P 2490 5780
+F 0 "#PWR029" H 2490 5630 50  0001 C CNN
+F 1 "+12V" H 2490 5920 50  0000 C CNN
+F 2 "" H 2490 5780 50  0000 C CNN
+F 3 "" H 2490 5780 50  0000 C CNN
+	1    2490 5780
+	1    0    0    -1  
+$EndComp
+Text Notes 2380 5530 0    60   ~ 0
+Motor Power
+Wire Notes Line
+	2285 5400 2970 5400
+Wire Notes Line
+	2970 5400 2970 6125
+Wire Notes Line
+	2970 6125 2290 6125
+Wire Notes Line
+	2290 6125 2290 5400
+$Comp
+L CONN_01X02 P203
+U 1 1 599D718F
+P 6585 1905
+F 0 "P203" H 6585 2055 50  0000 C CNN
+F 1 "CONN_01X02" V 6685 1905 50  0000 C CNN
+F 2 "6axis:Terminal_Block_200_mil" H 6585 1905 50  0001 C CNN
+F 3 "" H 6585 1905 50  0000 C CNN
+	1    6585 1905
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR030
+U 1 1 599D7196
+P 6385 2100
+F 0 "#PWR030" H 6385 1850 50  0001 C CNN
+F 1 "GND" H 6385 1950 50  0000 C CNN
+F 2 "" H 6385 2100 50  0000 C CNN
+F 3 "" H 6385 2100 50  0000 C CNN
+	1    6385 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R201
+U 1 1 599D719D
+P 6210 1755
+F 0 "R201" H 6015 1810 50  0000 L CNN
+F 1 "4.7K" V 6280 1675 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 6210 1755 50  0001 C CNN
+F 3 "" H 6210 1755 50  0000 C CNN
+F 4 "Value" H 6210 1755 60  0001 C CNN "Fieldname"
+	1    6210 1755
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR031
+U 1 1 599D71A5
+P 6210 1620
+F 0 "#PWR031" H 6210 1470 50  0001 C CNN
+F 1 "+5V" H 6210 1760 50  0000 C CNN
+F 2 "" H 6210 1620 50  0000 C CNN
+F 3 "" H 6210 1620 50  0000 C CNN
+F 4 "Value" H 6210 1620 60  0001 C CNN "Fieldname"
+	1    6210 1620
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6210 1655 6210 1620
+Wire Wire Line
+	6140 1855 6385 1855
+Connection ~ 6210 1855
+$Comp
+L C_Small C201
+U 1 1 599D71AF
+P 6305 1980
+F 0 "C201" H 6315 2050 50  0000 L CNN
+F 1 "0.1u" H 6055 1990 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6305 1980 50  0001 C CNN
+F 3 "" H 6305 1980 50  0000 C CNN
+F 4 "Value" H 6305 1980 60  0001 C CNN "Fieldname"
+	1    6305 1980
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6305 1855 6305 1880
+Wire Wire Line
+	6385 1955 6385 2100
+Wire Wire Line
+	6305 2080 6385 2080
+Connection ~ 6385 2080
+Connection ~ 6305 1855
+Wire Notes Line
+	5480 1420 5480 2000
+Wire Notes Line
+	5480 2000 6015 2000
+Wire Notes Line
+	6015 2000 6015 2360
+Wire Notes Line
+	6015 2360 6830 2360
+Wire Notes Line
+	6830 2360 6830 1420
+Wire Notes Line
+	6830 1420 5480 1420
+$Comp
+L CONN_01X02 P206
+U 1 1 599D7776
+P 6605 5280
+F 0 "P206" H 6605 5430 50  0000 C CNN
+F 1 "CONN_01X02" V 6705 5280 50  0000 C CNN
+F 2 "6axis:Terminal_Block_200_mil" H 6605 5280 50  0001 C CNN
+F 3 "" H 6605 5280 50  0000 C CNN
+	1    6605 5280
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR032
+U 1 1 599D777D
+P 6405 5475
+F 0 "#PWR032" H 6405 5225 50  0001 C CNN
+F 1 "GND" H 6405 5325 50  0000 C CNN
+F 2 "" H 6405 5475 50  0000 C CNN
+F 3 "" H 6405 5475 50  0000 C CNN
+	1    6405 5475
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R204
+U 1 1 599D7784
+P 6230 5130
+F 0 "R204" H 6035 5185 50  0000 L CNN
+F 1 "4.7K" V 6300 5050 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 6230 5130 50  0001 C CNN
+F 3 "" H 6230 5130 50  0000 C CNN
+F 4 "Value" H 6230 5130 60  0001 C CNN "Fieldname"
+	1    6230 5130
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR033
+U 1 1 599D778C
+P 6230 4995
+F 0 "#PWR033" H 6230 4845 50  0001 C CNN
+F 1 "+5V" H 6230 5135 50  0000 C CNN
+F 2 "" H 6230 4995 50  0000 C CNN
+F 3 "" H 6230 4995 50  0000 C CNN
+F 4 "Value" H 6230 4995 60  0001 C CNN "Fieldname"
+	1    6230 4995
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6230 5030 6230 4995
+Wire Wire Line
+	6160 5230 6405 5230
+Connection ~ 6230 5230
+$Comp
+L C_Small C204
+U 1 1 599D7796
+P 6325 5355
+F 0 "C204" H 6335 5425 50  0000 L CNN
+F 1 "0.1u" H 6075 5365 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6325 5355 50  0001 C CNN
+F 3 "" H 6325 5355 50  0000 C CNN
+F 4 "Value" H 6325 5355 60  0001 C CNN "Fieldname"
+	1    6325 5355
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6325 5230 6325 5255
+Wire Wire Line
+	6405 5330 6405 5475
+Wire Wire Line
+	6325 5455 6405 5455
+Connection ~ 6405 5455
+Connection ~ 6325 5230
+Wire Notes Line
+	5500 4795 5500 5375
+Wire Notes Line
+	5500 5375 6035 5375
+Wire Notes Line
+	6035 5375 6035 5735
+Wire Notes Line
+	6035 5735 6850 5735
+Wire Notes Line
+	6850 5735 6850 4795
+Wire Notes Line
+	6850 4795 5500 4795
+$Comp
+L CONN_01X02 P205
+U 1 1 599D7DC7
+P 6595 4190
+F 0 "P205" H 6595 4340 50  0000 C CNN
+F 1 "CONN_01X02" V 6695 4190 50  0000 C CNN
+F 2 "6axis:Terminal_Block_200_mil" H 6595 4190 50  0001 C CNN
+F 3 "" H 6595 4190 50  0000 C CNN
+	1    6595 4190
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR034
+U 1 1 599D7DCE
+P 6395 4385
+F 0 "#PWR034" H 6395 4135 50  0001 C CNN
+F 1 "GND" H 6395 4235 50  0000 C CNN
+F 2 "" H 6395 4385 50  0000 C CNN
+F 3 "" H 6395 4385 50  0000 C CNN
+	1    6395 4385
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R203
+U 1 1 599D7DD5
+P 6220 4040
+F 0 "R203" H 6025 4095 50  0000 L CNN
+F 1 "4.7K" V 6290 3960 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 6220 4040 50  0001 C CNN
+F 3 "" H 6220 4040 50  0000 C CNN
+F 4 "Value" H 6220 4040 60  0001 C CNN "Fieldname"
+	1    6220 4040
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR035
+U 1 1 599D7DDD
+P 6220 3905
+F 0 "#PWR035" H 6220 3755 50  0001 C CNN
+F 1 "+5V" H 6220 4045 50  0000 C CNN
+F 2 "" H 6220 3905 50  0000 C CNN
+F 3 "" H 6220 3905 50  0000 C CNN
+F 4 "Value" H 6220 3905 60  0001 C CNN "Fieldname"
+	1    6220 3905
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6220 3940 6220 3905
+Wire Wire Line
+	6150 4140 6395 4140
+Connection ~ 6220 4140
+$Comp
+L C_Small C203
+U 1 1 599D7DE7
+P 6315 4265
+F 0 "C203" H 6325 4335 50  0000 L CNN
+F 1 "0.1u" H 6065 4275 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6315 4265 50  0001 C CNN
+F 3 "" H 6315 4265 50  0000 C CNN
+F 4 "Value" H 6315 4265 60  0001 C CNN "Fieldname"
+	1    6315 4265
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6315 4140 6315 4165
+Wire Wire Line
+	6395 4240 6395 4385
+Wire Wire Line
+	6315 4365 6395 4365
+Connection ~ 6395 4365
+Connection ~ 6315 4140
+Wire Notes Line
+	5490 3705 5490 4285
+Wire Notes Line
+	5490 4285 6025 4285
+Wire Notes Line
+	6025 4285 6025 4645
+Wire Notes Line
+	6025 4645 6840 4645
+Wire Notes Line
+	6840 4645 6840 3705
+Wire Notes Line
+	6840 3705 5490 3705
+Text Notes 1740 2795 0    60   ~ 0
+Connections to the X/Y/Z\nLarge Stepper Controllers
+$Comp
+L DB9 J202
+U 1 1 599D8E9C
+P 10055 1785
+F 0 "J202" H 10055 2335 50  0000 C CNN
+F 1 "DB9" H 10055 1235 50  0000 C CNN
+F 2 "Connectors:DB9FD" H 10055 1785 50  0001 C CNN
+F 3 "http://portal.fciconnect.com/Comergent//fci/drawing/c01-8646-0752.pdf" H 10055 1785 50  0001 C CNN
+F 4 "Value" H 10055 1785 60  0001 C CNN "Fieldname"
+F 5 "D09S24A4GV00LF" H 10055 1785 60  0001 C CNN "MPN"
+	1    10055 1785
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR036
+U 1 1 599D8EA6
+P 9085 2240
+F 0 "#PWR036" H 9085 1990 50  0001 C CNN
+F 1 "GND" H 9085 2090 50  0000 C CNN
+F 2 "" H 9085 2240 50  0000 C CNN
+F 3 "" H 9085 2240 50  0000 C CNN
+	1    9085 2240
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9605 1385 9085 1385
+Wire Wire Line
+	9085 1385 9085 2240
+Wire Wire Line
+	9605 2085 9085 2085
+Connection ~ 9085 2085
+Wire Wire Line
+	9605 1985 9085 1985
+Wire Wire Line
+	9085 1985 9085 1980
+Connection ~ 9085 1980
+Wire Wire Line
+	9605 1885 9085 1885
+Connection ~ 9085 1885
+Wire Wire Line
+	9605 1685 9085 1685
+Wire Wire Line
+	9085 1685 9085 1690
+Connection ~ 9085 1690
+Wire Wire Line
+	9085 1585 9605 1585
+Connection ~ 9085 1585
+$Comp
+L DB9 J203
+U 1 1 599D8EBA
+P 10060 3015
+F 0 "J203" H 10060 3565 50  0000 C CNN
+F 1 "DB9" H 10060 2465 50  0000 C CNN
+F 2 "Connectors:DB9MD" H 10060 3015 50  0001 C CNN
+F 3 "http://portal.fciconnect.com/Comergent//fci/drawing/c01-8646-0816.pdf" H 10060 3015 50  0001 C CNN
+F 4 "Value" H 10060 3015 60  0001 C CNN "Fieldname"
+F 5 "D09P24A4GV00LF" H 10060 3015 60  0001 C CNN "MPN"
+	1    10060 3015
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR037
+U 1 1 599D8EC1
+P 9090 3470
+F 0 "#PWR037" H 9090 3220 50  0001 C CNN
+F 1 "GND" H 9090 3320 50  0000 C CNN
+F 2 "" H 9090 3470 50  0000 C CNN
+F 3 "" H 9090 3470 50  0000 C CNN
+	1    9090 3470
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9610 2615 9090 2615
+Wire Wire Line
+	9090 2615 9090 3470
+Wire Wire Line
+	9610 3315 9090 3315
+Connection ~ 9090 3315
+Wire Wire Line
+	9610 3215 9090 3215
+Wire Wire Line
+	9090 3215 9090 3210
+Connection ~ 9090 3210
+Wire Wire Line
+	9610 3115 9090 3115
+Connection ~ 9090 3115
+Wire Wire Line
+	9610 2915 9090 2915
+Wire Wire Line
+	9090 2915 9090 2920
+Connection ~ 9090 2920
+Wire Wire Line
+	9090 2815 9610 2815
+Connection ~ 9090 2815
+$Comp
+L DB15 J201
+U 1 1 599D91E9
+P 10020 5010
+F 0 "J201" H 10040 5860 50  0000 C CNN
+F 1 "DB15" H 9970 4160 50  0000 C CNN
+F 2 "Connectors:DB15FD" H 10020 5010 50  0001 C CNN
+F 3 "http://portal.fciconnect.com/Comergent//fci/drawing/c01-8646-0752.pdf" H 10020 5010 50  0001 C CNN
+F 4 "Value" H 10020 5010 60  0001 C CNN "Fieldname"
+F 5 "D15S24A4GV00LF" H 10020 5010 60  0001 C CNN "MPN"
+	1    10020 5010
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR038
+U 1 1 599D91FC
+P 9240 4510
+F 0 "#PWR038" H 9240 4260 50  0001 C CNN
+F 1 "GND" H 9240 4360 50  0000 C CNN
+F 2 "" H 9240 4510 50  0000 C CNN
+F 3 "" H 9240 4510 50  0000 C CNN
+	1    9240 4510
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9570 4510 9240 4510
+$Comp
+L GND #PWR039
+U 1 1 599D9203
+P 9240 4810
+F 0 "#PWR039" H 9240 4560 50  0001 C CNN
+F 1 "GND" H 9240 4660 50  0000 C CNN
+F 2 "" H 9240 4810 50  0000 C CNN
+F 3 "" H 9240 4810 50  0000 C CNN
+	1    9240 4810
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9570 4810 9240 4810
+$Comp
+L GND #PWR040
+U 1 1 599D920A
+P 9240 5110
+F 0 "#PWR040" H 9240 4860 50  0001 C CNN
+F 1 "GND" H 9240 4960 50  0000 C CNN
+F 2 "" H 9240 5110 50  0000 C CNN
+F 3 "" H 9240 5110 50  0000 C CNN
+	1    9240 5110
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9570 5110 9240 5110
+Text HLabel 2620 3095 0    60   Input ~ 0
+~ENABLE
+Text HLabel 2620 3195 0    60   Input ~ 0
+~X-Step
+Text HLabel 2620 3295 0    60   Input ~ 0
+~X-Dir
+$Comp
+L CONN_01X08 P202
+U 1 1 599E2270
+P 2820 3445
+F 0 "P202" H 2820 3895 50  0000 C CNN
+F 1 "CONN_01X08" V 2920 3445 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x08" H 2820 3445 50  0001 C CNN
+F 3 "" H 2820 3445 50  0000 C CNN
+	1    2820 3445
+	1    0    0    -1  
+$EndComp
+Text HLabel 2620 3395 0    60   Input ~ 0
+~Y-Step
+Text HLabel 2620 3495 0    60   Input ~ 0
+~Y-Dir
+Text HLabel 2620 3595 0    60   Input ~ 0
+~Z-Step
+Text HLabel 2620 3695 0    60   Input ~ 0
+~Z-Dir
+Wire Wire Line
+	2620 3795 2065 3795
+$Comp
+L +5V #PWR041
+U 1 1 599E375C
+P 2065 3795
+F 0 "#PWR041" H 2065 3645 50  0001 C CNN
+F 1 "+5V" H 2065 3935 50  0000 C CNN
+F 2 "" H 2065 3795 50  0000 C CNN
+F 3 "" H 2065 3795 50  0000 C CNN
+	1    2065 3795
+	1    0    0    -1  
+$EndComp
+Text HLabel 6140 1855 0    60   Input ~ 0
+CYCLE_START
+Text HLabel 6150 2975 0    60   Input ~ 0
+FEED_HOLD
+Text HLabel 6150 4140 0    60   Input ~ 0
+SAFETY_DOOR
+Text HLabel 6160 5230 0    60   Input ~ 0
+RESET
+Text HLabel 9605 1485 0    60   Input ~ 0
+C_LIMIT
+Text HLabel 9605 1785 0    60   Input ~ 0
+B_LIMIT
+Text HLabel 9605 2185 0    60   Input ~ 0
+A_LIMIT
+Text HLabel 9610 2715 0    60   Input ~ 0
+Z_LIMIT
+Text HLabel 9610 3015 0    60   Input ~ 0
+Y_LIMIT
+Text HLabel 9610 3415 0    60   Input ~ 0
+X_LIMIT
+Text HLabel 9570 4310 0    60   Input ~ 0
+A1A
+Text HLabel 9570 4410 0    60   Input ~ 0
+A1B
+Text HLabel 9570 4610 0    60   Input ~ 0
+A2A
+Text HLabel 9570 4710 0    60   Input ~ 0
+A2B
+Text HLabel 9570 4910 0    60   Input ~ 0
+B1A
+Text HLabel 9570 5010 0    60   Input ~ 0
+B1B
+Text HLabel 9570 5210 0    60   Input ~ 0
+B2A
+Text HLabel 9570 5310 0    60   Input ~ 0
+B2B
+Text HLabel 9570 5410 0    60   Input ~ 0
+C1A
+Text HLabel 9570 5510 0    60   Input ~ 0
+C1B
+Text HLabel 9570 5610 0    60   Input ~ 0
+C2A
+Text HLabel 9570 5710 0    60   Input ~ 0
+C2B
+$EndSCHEMATC
