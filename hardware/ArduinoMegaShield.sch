@@ -825,7 +825,7 @@ F 1 "SW_Coded" H 4830 2660 50  0000 L CNN
 F 2 "6axis:S-1010A" H 5055 2985 50  0001 C CNN
 F 3 "https://www.nidec-copal-electronics.com/e/catalog/switch/s-1000a&s-2000a.pdf" H 5055 2985 50  0001 C CNN
 F 4 "Value" H 5080 2960 60  0001 C CNN "Fieldname"
-F 5 "Copal S-1011A" H 5080 2960 60  0001 C CNN "MPN"
+F 5 "Copal S-1010A" H 5080 2960 60  0001 C CNN "MPN"
 	1    5080 2960
 	1    0    0    -1  
 $EndComp
@@ -853,7 +853,7 @@ F 1 "SW_Coded" H 4895 5540 50  0000 L CNN
 F 2 "6axis:S-1010A" H 5120 5865 50  0001 C CNN
 F 3 "https://www.nidec-copal-electronics.com/e/catalog/switch/s-1000a&s-2000a.pdf" H 5120 5865 50  0001 C CNN
 F 4 "Value" H 5145 5840 60  0001 C CNN "Fieldname"
-F 5 "Copal S-1011A" H 5145 5840 60  0001 C CNN "MPN"
+F 5 "Copal S-1010A" H 5145 5840 60  0001 C CNN "MPN"
 	1    5145 5840
 	1    0    0    -1  
 $EndComp
@@ -879,7 +879,7 @@ F 1 "SW_Coded" H 4880 4115 50  0000 L CNN
 F 2 "6axis:S-1010A" H 5105 4440 50  0001 C CNN
 F 3 "https://www.nidec-copal-electronics.com/e/catalog/switch/s-1000a&s-2000a.pdf" H 5105 4440 50  0001 C CNN
 F 4 "Value" H 5130 4415 60  0001 C CNN "Fieldname"
-F 5 "Copal S-1011A" H 5130 4415 60  0001 C CNN "MPN"
+F 5 "Copal S-1010A" H 5130 4415 60  0001 C CNN "MPN"
 	1    5130 4415
 	1    0    0    -1  
 $EndComp
