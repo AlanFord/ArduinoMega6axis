@@ -98,10 +98,10 @@ U 1 1 599D8E9C
 P 8430 1800
 F 0 "J202" H 8430 2350 50  0000 C CNN
 F 1 "DB9" H 8430 1250 50  0000 C CNN
-F 2 "Connectors:DB9FD" H 8430 1800 50  0001 C CNN
-F 3 "http://portal.fciconnect.com/Comergent//fci/drawing/10130913.pdf" H 8430 1800 50  0001 C CNN
+F 2 "6axis:LD09S33E4GV00LF" H 8430 1800 50  0001 C CNN
+F 3 "http://portal.fciconnect.com/Comergent//fci/drawing/10130914.pdf" H 8430 1800 50  0001 C CNN
 F 4 "Value" H 8430 1800 60  0001 C CNN "Fieldname"
-F 5 "LD09S13A4GV00LF" H 8430 1800 60  0001 C CNN "MPN"
+F 5 "LD09S33E4GV00LF" H 8430 1800 60  0001 C CNN "MPN"
 	1    8430 1800
 	1    0    0    -1  
 $EndComp
@@ -145,10 +145,10 @@ U 1 1 599D8EBA
 P 8435 3030
 F 0 "J203" H 8435 3580 50  0000 C CNN
 F 1 "DB9" H 8435 2480 50  0000 C CNN
-F 2 "Connectors:DB9MD" H 8435 3030 50  0001 C CNN
-F 3 "http://portal.fciconnect.com/Comergent//fci/drawing/10130913.pdf" H 8435 3030 50  0001 C CNN
+F 2 "6axis:LD09P33E4GV00LF" H 8435 3030 50  0001 C CNN
+F 3 "http://portal.fciconnect.com/Comergent//fci/drawing/10130914.pdf" H 8435 3030 50  0001 C CNN
 F 4 "Value" H 8435 3030 60  0001 C CNN "Fieldname"
-F 5 "LD09P13A4GX00LF" H 8435 3030 60  0001 C CNN "MPN"
+F 5 "LD09P33E4GV00LF" H 8435 3030 60  0001 C CNN "MPN"
 	1    8435 3030
 	1    0    0    -1  
 $EndComp
@@ -192,7 +192,7 @@ U 1 1 599D91E9
 P 8395 5025
 F 0 "J201" H 8415 5875 50  0000 C CNN
 F 1 "DB15" H 8345 4175 50  0000 C CNN
-F 2 "Connectors:DB15FD" H 8395 5025 50  0001 C CNN
+F 2 "6axis:D15S33E4GV00LF" H 8395 5025 50  0001 C CNN
 F 3 "http://portal.fciconnect.com/Comergent//fci/drawing/c01-8646-0824.pdf" H 8395 5025 50  0001 C CNN
 F 4 "Value" H 8395 5025 60  0001 C CNN "Fieldname"
 F 5 "D15S33E4GV00LF" H 8395 5025 60  0001 C CNN "MPN"
@@ -202,16 +202,16 @@ $EndComp
 $Comp
 L GND #PWR032
 U 1 1 599D91FC
-P 7615 4525
-F 0 "#PWR032" H 7615 4275 50  0001 C CNN
-F 1 "GND" H 7615 4375 50  0000 C CNN
-F 2 "" H 7615 4525 50  0000 C CNN
-F 3 "" H 7615 4525 50  0000 C CNN
-	1    7615 4525
+P 7615 4325
+F 0 "#PWR032" H 7615 4075 50  0001 C CNN
+F 1 "GND" H 7615 4175 50  0000 C CNN
+F 2 "" H 7615 4325 50  0000 C CNN
+F 3 "" H 7615 4325 50  0000 C CNN
+	1    7615 4325
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7945 4525 7615 4525
+	7945 4325 7615 4325
 $Comp
 L GND #PWR033
 U 1 1 599D9203
@@ -225,24 +225,11 @@ F 3 "" H 7615 4825 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	7945 4825 7615 4825
-$Comp
-L GND #PWR034
-U 1 1 599D920A
-P 7615 5125
-F 0 "#PWR034" H 7615 4875 50  0001 C CNN
-F 1 "GND" H 7615 4975 50  0000 C CNN
-F 2 "" H 7615 5125 50  0000 C CNN
-F 3 "" H 7615 5125 50  0000 C CNN
-	1    7615 5125
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7945 5125 7615 5125
 Text HLabel 3960 2005 0    60   Input ~ 0
 ~ENABLE
-Text HLabel 3960 2605 0    60   Input ~ 0
+Text HLabel 3960 2505 0    60   Input ~ 0
 ~X-Step
-Text HLabel 3960 2305 0    60   Input ~ 0
+Text HLabel 3960 2205 0    60   Input ~ 0
 ~X-Dir
 $Comp
 L CONN_01X08 P202
@@ -258,9 +245,9 @@ F 6 "Value" H 4160 2355 60  0001 C CNN "Fieldname"
 	1    4160 2355
 	1    0    0    -1  
 $EndComp
-Text HLabel 3960 2505 0    60   Input ~ 0
+Text HLabel 3960 2605 0    60   Input ~ 0
 ~Y-Step
-Text HLabel 3960 2205 0    60   Input ~ 0
+Text HLabel 3960 2305 0    60   Input ~ 0
 ~Y-Dir
 Text HLabel 3960 2405 0    60   Input ~ 0
 ~Z-Step
@@ -299,29 +286,29 @@ Text HLabel 7985 3030 0    60   Input ~ 0
 Y_LIMIT
 Text HLabel 6565 3835 0    60   Input ~ 0
 X_LIMIT
-Text HLabel 7945 4325 0    60   Input ~ 0
-A1A
 Text HLabel 7945 4425 0    60   Input ~ 0
+A1A
+Text HLabel 7945 4525 0    60   Input ~ 0
 A1B
-Text HLabel 7945 4625 0    60   Input ~ 0
-A2A
 Text HLabel 7945 4725 0    60   Input ~ 0
+A2A
+Text HLabel 7945 4625 0    60   Input ~ 0
 A2B
-Text HLabel 7945 4925 0    60   Input ~ 0
-B1A
 Text HLabel 7945 5025 0    60   Input ~ 0
+B1A
+Text HLabel 7945 5125 0    60   Input ~ 0
 B1B
-Text HLabel 7945 5225 0    60   Input ~ 0
-B2A
 Text HLabel 7945 5325 0    60   Input ~ 0
+B2A
+Text HLabel 7945 5225 0    60   Input ~ 0
 B2B
-Text HLabel 7945 5425 0    60   Input ~ 0
+Text HLabel 7945 5725 0    60   Input ~ 0
 C1A
 Text HLabel 7945 5525 0    60   Input ~ 0
 C1B
-Text HLabel 7945 5625 0    60   Input ~ 0
+Text HLabel 7945 5425 0    60   Input ~ 0
 C2A
-Text HLabel 7945 5725 0    60   Input ~ 0
+Text HLabel 7945 5625 0    60   Input ~ 0
 C2B
 $Comp
 L CONN_01X08 P203
@@ -398,4 +385,9 @@ Text Notes 8810 3075 0    60   ~ 0
 Male
 Text Notes 8780 1810 0    60   ~ 0
 Female
+Wire Wire Line
+	7830 4925 7945 4925
+Wire Wire Line
+	7830 4925 7830 4825
+Connection ~ 7830 4825
 $EndSCHEMATC
